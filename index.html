@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/happynewyear.png">
+    <title>Happy New Year 2024</title>
+</head>
+
+<body>
+    <audio controls autoplay preload="auto" style="z-index: 999; opacity: 0.01; position: fixed; left: 0; bottom: 0;">
+        <source src="audio/happynewyear.mp3" type="audio/mpeg">
+    </audio>
+    <div class="snow-container"></div>
+
+    <svg width="0" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="circleBlur40" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+                <feOffset dx="40" dy="0" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o0" result="cT0">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="39" dy="8" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o1" result="cT1">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="37" dy="16" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o2" result="cT2">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="32" dy="24" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o3" result="cT3">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="27" dy="30" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o4" result="cT4">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="20" dy="35" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o5" result="cT5">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="12" dy="38" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o6" result="cT6">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="4" dy="40" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o7" result="cT7">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-4" dy="40" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o8" result="cT8">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-12" dy="38" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o9" result="cT9">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-20" dy="35" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o10" result="cT10">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-27" dy="30" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o11" result="cT11">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-32" dy="24" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o12" result="cT12">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-37" dy="16" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o13" result="cT13">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-39" dy="8" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o14" result="cT14">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-40" dy="0" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o15" result="cT15">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-39" dy="-8" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o16" result="cT16">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-37" dy="-16" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o17" result="cT17">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-32" dy="-24" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o18" result="cT18">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-27" dy="-30" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o19" result="cT19">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-20" dy="-35" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o20" result="cT20">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-12" dy="-38" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o21" result="cT21">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-4" dy="-40" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o22" result="cT22">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="4" dy="-40" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o23" result="cT23">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="12" dy="-38" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o24" result="cT24">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="20" dy="-35" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o25" result="cT25">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="27" dy="-30" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o26" result="cT26">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="32" dy="-24" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o27" result="cT27">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="37" dy="-16" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o28" result="cT28">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="39" dy="-8" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o29" result="cT29">
+                    <feFuncA type="table" tableValues="0 0.06666666666666667"></feFuncA>
+                </feComponentTransfer>
+                <feMerge result="merge">
+                    <feMergeNode in="cT0"></feMergeNode>
+                    <feMergeNode in="cT1"></feMergeNode>
+                    <feMergeNode in="cT2"></feMergeNode>
+                    <feMergeNode in="cT3"></feMergeNode>
+                    <feMergeNode in="cT4"></feMergeNode>
+                    <feMergeNode in="cT5"></feMergeNode>
+                    <feMergeNode in="cT6"></feMergeNode>
+                    <feMergeNode in="cT7"></feMergeNode>
+                    <feMergeNode in="cT8"></feMergeNode>
+                    <feMergeNode in="cT9"></feMergeNode>
+                    <feMergeNode in="cT10"></feMergeNode>
+                    <feMergeNode in="cT11"></feMergeNode>
+                    <feMergeNode in="cT12"></feMergeNode>
+                    <feMergeNode in="cT13"></feMergeNode>
+                    <feMergeNode in="cT14"></feMergeNode>
+                    <feMergeNode in="cT15"></feMergeNode>
+                    <feMergeNode in="cT16"></feMergeNode>
+                    <feMergeNode in="cT17"></feMergeNode>
+                    <feMergeNode in="cT18"></feMergeNode>
+                    <feMergeNode in="cT19"></feMergeNode>
+                    <feMergeNode in="cT20"></feMergeNode>
+                    <feMergeNode in="cT21"></feMergeNode>
+                    <feMergeNode in="cT22"></feMergeNode>
+                    <feMergeNode in="cT23"></feMergeNode>
+                    <feMergeNode in="cT24"></feMergeNode>
+                    <feMergeNode in="cT25"></feMergeNode>
+                    <feMergeNode in="cT26"></feMergeNode>
+                    <feMergeNode in="cT27"></feMergeNode>
+                    <feMergeNode in="cT28"></feMergeNode>
+                    <feMergeNode in="cT29"></feMergeNode>
+                </feMerge>
+                <feGaussianBlur stdDeviation="4" in="merge" edgeMode="none" result="blur"></feGaussianBlur>
+            </filter>
+        </defs>
+    </svg>
+    <svg width="0" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="circleBlur4" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+                <feOffset dx="4" dy="0" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o0" result="cT0">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="4" dy="1" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o1" result="cT1">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="4" dy="2" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o2" result="cT2">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="3" dy="2" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o3" result="cT3">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="3" dy="3" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o4" result="cT4">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="2" dy="3" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o5" result="cT5">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="1" dy="4" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o6" result="cT6">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="0" dy="4" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o7" result="cT7">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-1" dy="4" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o8" result="cT8">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-2" dy="3" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o9" result="cT9">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-3" dy="3" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o10" result="cT10">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-3" dy="2" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o11" result="cT11">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-4" dy="2" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o12" result="cT12">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-4" dy="1" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o13" result="cT13">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-4" dy="0" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o14" result="cT14">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-4" dy="-1" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o15" result="cT15">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-4" dy="-2" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o16" result="cT16">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-3" dy="-2" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o17" result="cT17">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-3" dy="-3" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o18" result="cT18">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-2" dy="-3" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o19" result="cT19">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="-1" dy="-4" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o20" result="cT20">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="0" dy="-4" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o21" result="cT21">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="1" dy="-4" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o22" result="cT22">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="2" dy="-3" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o23" result="cT23">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="3" dy="-3" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o24" result="cT24">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="3" dy="-2" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o25" result="cT25">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="4" dy="-2" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o26" result="cT26">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feOffset dx="4" dy="-1" in="SourceGraphic" result="o{id}"></feOffset>
+                <feComponentTransfer in="o27" result="cT27">
+                    <feFuncA type="table" tableValues="0 0.07142857142857144"></feFuncA>
+                </feComponentTransfer>
+                <feMerge result="merge">
+                    <feMergeNode in="cT0"></feMergeNode>
+                    <feMergeNode in="cT1"></feMergeNode>
+                    <feMergeNode in="cT2"></feMergeNode>
+                    <feMergeNode in="cT3"></feMergeNode>
+                    <feMergeNode in="cT4"></feMergeNode>
+                    <feMergeNode in="cT5"></feMergeNode>
+                    <feMergeNode in="cT6"></feMergeNode>
+                    <feMergeNode in="cT7"></feMergeNode>
+                    <feMergeNode in="cT8"></feMergeNode>
+                    <feMergeNode in="cT9"></feMergeNode>
+                    <feMergeNode in="cT10"></feMergeNode>
+                    <feMergeNode in="cT11"></feMergeNode>
+                    <feMergeNode in="cT12"></feMergeNode>
+                    <feMergeNode in="cT13"></feMergeNode>
+                    <feMergeNode in="cT14"></feMergeNode>
+                    <feMergeNode in="cT15"></feMergeNode>
+                    <feMergeNode in="cT16"></feMergeNode>
+                    <feMergeNode in="cT17"></feMergeNode>
+                    <feMergeNode in="cT18"></feMergeNode>
+                    <feMergeNode in="cT19"></feMergeNode>
+                    <feMergeNode in="cT20"></feMergeNode>
+                    <feMergeNode in="cT21"></feMergeNode>
+                    <feMergeNode in="cT22"></feMergeNode>
+                    <feMergeNode in="cT23"></feMergeNode>
+                    <feMergeNode in="cT24"></feMergeNode>
+                    <feMergeNode in="cT25"></feMergeNode>
+                    <feMergeNode in="cT26"></feMergeNode>
+                    <feMergeNode in="cT27"></feMergeNode>
+                </feMerge>
+                <feGaussianBlur stdDeviation="0.4" in="merge" edgeMode="none" result="blur"></feGaussianBlur>
+            </filter>
+        </defs>
+    </svg>
+
+
+    <div class="happy">
+        <div class="tree">
+            <div class="tree__light"
+                style="--appear: 0; --y: 0; --rotate: 1440; --radius: 12.5; --speed: 1.1108895296036003; --delay: -3.043076984970341;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 1; --y: 2; --rotate: 1411.2; --radius: 12.25; --speed: 5.344650565054094; --delay: -2.0696532065340323;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 2; --y: 4; --rotate: 1382.4; --radius: 12; --speed: 2.317859565356688; --delay: -1.4538635806448053;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 3; --y: 6; --rotate: 1353.6000000000001; --radius: 11.75; --speed: 1.7555894824766938; --delay: -7.620459547544078;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 4; --y: 8; --rotate: 1324.8; --radius: 11.5; --speed: 0.16374817040371248; --delay: -3.97968010404004;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 5; --y: 10; --rotate: 1296; --radius: 11.25; --speed: 2.074216999057994; --delay: -4.706862161517746;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 6; --y: 12; --rotate: 1267.2; --radius: 11; --speed: 0.18558655703762028; --delay: -9.074850208752503;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 7; --y: 14; --rotate: 1238.4; --radius: 10.75; --speed: 7.698928945569157; --delay: -3.425576067357894;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 8; --y: 16; --rotate: 1209.6000000000001; --radius: 10.5; --speed: 0.22645543988303762; --delay: -2.6339567502154715;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 9; --y: 18; --rotate: 1180.8; --radius: 10.25; --speed: 0.26081472658196825; --delay: -4.506938711859771;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 10; --y: 20; --rotate: 1152; --radius: 10; --speed: 1.430962464876635; --delay: -0.08885304223877677;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 11; --y: 22; --rotate: 1123.2; --radius: 9.75; --speed: 7.466759205591293; --delay: -2.658959596628203;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 12; --y: 24; --rotate: 1094.4; --radius: 9.5; --speed: 4.169889174087473; --delay: -7.123206374030435;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 13; --y: 26; --rotate: 1065.6000000000001; --radius: 9.25; --speed: 4.620159466934346; --delay: -0.8281264695572932;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 14; --y: 28; --rotate: 1036.8; --radius: 9; --speed: 9.19428650366202; --delay: -9.030593751267695;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 15; --y: 30; --rotate: 1008; --radius: 8.75; --speed: 3.8812809399145443; --delay: -7.397623327922867;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 16; --y: 32; --rotate: 979.2; --radius: 8.5; --speed: 0.002536616188715257; --delay: -3.7750314075284153;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 17; --y: 34; --rotate: 950.4; --radius: 8.25; --speed: 2.4554555043999193; --delay: -9.344189992664504;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 18; --y: 36; --rotate: 921.6; --radius: 8; --speed: 8.084256793928486; --delay: -8.335298246834979;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 19; --y: 38; --rotate: 892.8000000000001; --radius: 7.75; --speed: 8.65975829842367; --delay: -9.173949817354979;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 20; --y: 40; --rotate: 864; --radius: 7.5; --speed: 3.36357400493263; --delay: -2.5520694143144262;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 21; --y: 42; --rotate: 835.2; --radius: 7.25; --speed: 5.687614115102768; --delay: -2.004511224218919;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 22; --y: 44; --rotate: 806.4; --radius: 7; --speed: 3.2530402464513664; --delay: -4.801613218082112;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 23; --y: 46; --rotate: 777.6; --radius: 6.75; --speed: 8.935518027631026; --delay: -9.040816394367416;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 24; --y: 48; --rotate: 748.8000000000001; --radius: 6.5; --speed: 6.502205905179748; --delay: -8.770036257452624;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 25; --y: 50; --rotate: 720; --radius: 6.25; --speed: 6.922672948855579; --delay: -4.392753996932022;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 26; --y: 52; --rotate: 691.2; --radius: 6; --speed: 4.607364780941088; --delay: -3.8633685157483355;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 27; --y: 54; --rotate: 662.4; --radius: 5.75; --speed: 5.051730378893716; --delay: -7.163007654797915;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 28; --y: 56; --rotate: 633.6; --radius: 5.5; --speed: 6.567718527191002; --delay: -6.011604697430856;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 29; --y: 58; --rotate: 604.8000000000001; --radius: 5.25; --speed: 9.308273641167892; --delay: -0.2129691227419328;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 30; --y: 60; --rotate: 576; --radius: 5; --speed: 4.612818496241429; --delay: -4.003396132497297;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 31; --y: 62; --rotate: 547.2; --radius: 4.75; --speed: 2.5873545666091213; --delay: -6.1733039947577435;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 32; --y: 64; --rotate: 518.4; --radius: 4.5; --speed: 4.68311866669003; --delay: -8.73804475347744;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 33; --y: 66; --rotate: 489.6; --radius: 4.25; --speed: 9.061359538068084; --delay: -4.7007253771801345;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 34; --y: 68; --rotate: 460.8; --radius: 4; --speed: 6.217293741789107; --delay: -1.2150728348284834;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 35; --y: 70; --rotate: 432; --radius: 3.75; --speed: 5.96817624282237; --delay: -4.880661941783158;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 36; --y: 72; --rotate: 403.2; --radius: 3.5; --speed: 9.459742410467832; --delay: -3.2517252764318405;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 37; --y: 74; --rotate: 374.40000000000003; --radius: 3.25; --speed: 4.333059564099568; --delay: -4.67647467921795;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 38; --y: 76; --rotate: 345.6; --radius: 3; --speed: 2.0344009124931883; --delay: -1.8443019307117159;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 39; --y: 78; --rotate: 316.8; --radius: 2.75; --speed: 5.7095714889944205; --delay: -6.090995254658269;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 40; --y: 80; --rotate: 288; --radius: 2.5; --speed: 9.227285263771574; --delay: -8.952433555178732;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 41; --y: 82; --rotate: 259.2; --radius: 2.25; --speed: 2.710099576391425; --delay: -3.6865293894898654;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 42; --y: 84; --rotate: 230.4; --radius: 2; --speed: 8.096525465472222; --delay: -9.606003038584577;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 43; --y: 86; --rotate: 201.6; --radius: 1.75; --speed: 6.419742847591947; --delay: -2.0181839266295576;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 44; --y: 88; --rotate: 172.8; --radius: 1.5; --speed: 5.293574409761288; --delay: -5.672995024714751;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 45; --y: 90; --rotate: 144; --radius: 1.25; --speed: 1.5032353287622469; --delay: -4.657562675320577;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 46; --y: 92; --rotate: 115.2; --radius: 1; --speed: 0.6180886857836665; --delay: -2.1604231728959045;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 47; --y: 94; --rotate: 86.4; --radius: 0.75; --speed: 9.334935948232596; --delay: -7.237484906510976;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 48; --y: 96; --rotate: 57.6; --radius: 0.5; --speed: 7.205632849509502; --delay: -7.2574898273875625;">
+            </div>
+            <div class="tree__light"
+                style="--appear: 49; --y: 98; --rotate: 28.8; --radius: 0.25; --speed: 8.19848276845576; --delay: -6.862526869031845;">
+            </div>
+            <svg class="tree__star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.32 108.44" style="--delay: 50">
+                <path
+                    d="M90.19 104.33L57.12 87.38 24.4 105l5.91-36.69L3.44 42.65l36.72-5.72 16.1-33.5L73.06 36.6l36.83 4.97-26.35 26.21z"
+                    fill="none" stroke-width="6.88" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="happy2">
+        <div class="feliz">Happy new year</div>
+        <div class="ano_novo">
+            <span>202</span>
+            <span class="seis">3</span>
+            <span class="sete">4</span>
+            <div class="balao"></div>
+        </div>
+        <div class="fogos">
+            <div class="f1">
+                <span><i></i></span>
+                <span><i></i></span>
+                <span><i></i></span>
+            </div>
+            <div class="f2">
+                <span><i></i></span>
+                <span><i></i></span>
+                <span><i></i></span>
+            </div>
+            <div class="f3">
+                <span><i></i></span>
+                <span><i></i></span>
+                <span><i></i></span>
+            </div>
+            <div class="f4">
+                <span><i></i></span>
+                <span><i></i></span>
+                <span><i></i></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/javasrcipt.js"></script>
+</body>
+
+</html>
