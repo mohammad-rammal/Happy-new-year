@@ -22,9 +22,9 @@ Installation Guide
 Usage
 -----
 - Festive Experience: Immerse yourself in the vibrant and joyous visual design.
-  
------
+
 ### Note for Users
+-----
 🔊 **Turn on Audio:** For an enhanced experience, ensure your device's audio is turned on. Click on the audio icon located at the bottom left corner to activate sound effects if available.
 
 Credits
